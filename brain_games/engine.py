@@ -9,12 +9,14 @@ def run_game(game):
     print(game.RULES)
     win_score = 0
     while win_score < ROUNDS:
-        correct_answer, question = game.task_func()
+        question, correct_answer = game.task_func()
+        print(f'Question: {question}')
         answer = prompt.string('Your answer: ')
         if answer == correct_answer:
             print('Correct!')
             win_score += 1
         elif answer != correct_answer:
-            print(f"{answer} is wrong answer ;(. Correct answer was {correct_answer}.\nLet's try again, {name}!")
-        if win_score == finish:
+            print(f"'{answer}' is wrong answer ;(. Correct answer was '{correct_answer}'.\nLet's try again, {name}!")
+            break
+        if win_score == ROUNDS:
             print(f'Congratulations, {name}!')
