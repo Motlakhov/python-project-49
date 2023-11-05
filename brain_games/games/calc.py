@@ -3,6 +3,7 @@ from random import choice, randint
 
 RULES = 'What is the result of the expression?'
 
+
 def task_func():
     num1 = randint(10, 30)
     num2 = randint(1, 20)
