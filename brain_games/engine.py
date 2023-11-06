@@ -17,9 +17,10 @@ def run_game(game):
             print('Correct!')
             win_score += 1
         elif answer != correct_answer:
-            print(f"'{answer}' is wrong answer ;(."
-                  "Correct answer was '{correct_answer}'."
-                  "\nLet's try again, {name}!")
+            print(
+                  f"'{answer}' is wrong answer ;(."
+                  f"Correct answer was '{correct_answer}'."
+                  f"\nLet's try again, {name}!")
             break
         if win_score == ROUNDS:
             print(f'Congratulations, {name}!')
