@@ -13,5 +13,5 @@ def is_even(number):
 def task_func():
     random_number = randint(1, 100)
     question = random_number
-    correct_answer = 'yes' if is_even(random_number) == True else 'no'
+    correct_answer = 'yes' if is_even(random_number) is True else 'no'
     return question, correct_answer
