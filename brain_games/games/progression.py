@@ -21,7 +21,7 @@ def question_string(progression):
             modified_progression = modified_progression + str(num) + ' '
         else:
             modified_progression += '.. '
-    return modified_progression, str(missing_element)
+    return modified_progression, missing_element
 
 
 def task_func():

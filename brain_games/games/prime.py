@@ -1,17 +1,18 @@
 from random import randint
 
 RULES = 'Answer "yes" if given number is prime. Otherwise answer "no".'
-
+MIN_RANDOM_NUMBER = 1
+MAX_RANDOM_NUMBER = 100
 
 def is_prime(number):
-    d = 2
-    while number % d != 0:
-        d += 1
-    return d == number
+    divider = 2
+    while number % divider != 0:
+        divider += 1
+    return divider == number
 
 
 def task_func():
-    random_number = randint(1, 100)
+    random_number = randint(MIN_RANDOM_NUMBER, MAX_RANDOM_NUMBER)
     question = random_number
     if is_prime(random_number) is True:
         correct_answer = 'yes'
