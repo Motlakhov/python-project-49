@@ -4,6 +4,7 @@ RULES = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 MIN_RANDOM_NUMBER = 1
 MAX_RANDOM_NUMBER = 100
 
+
 def is_prime(number):
     divider = 2
     while number % divider != 0:
