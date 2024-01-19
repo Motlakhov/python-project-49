@@ -12,11 +12,11 @@ def is_prime(number):
     return divider == number
 
 
-def task_func():
+def get_question_and_correct_answer():
     random_number = randint(MIN_RANDOM_NUMBER, MAX_RANDOM_NUMBER)
     question = random_number
-    if is_prime(random_number) is True:
+    if is_prime(random_number):
         correct_answer = 'yes'
-    elif is_prime(random_number) is False:
+    else:
         correct_answer = 'no'
     return question, correct_answer

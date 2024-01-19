@@ -6,14 +6,11 @@ MAX_NUM = 100
 
 
 def is_even(number):
-    if number % 2 == 0:
-        return True
-    else:
-        return False
+    return number % 2 == 0
 
 
-def task_func():
+def get_question_and_correct_answer():
     random_number = randint(MIN_NUM, MAX_NUM)
     question = random_number
-    correct_answer = 'yes' if is_even(random_number) is True else 'no'
+    correct_answer = 'yes' if is_even(random_number) else 'no'
     return question, correct_answer

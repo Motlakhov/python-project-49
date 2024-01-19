@@ -6,7 +6,7 @@ MIN_NUM = 1
 MAX_NUM = 100
 
 
-def task_func():
+def get_question_and_correct_answer():
     num1 = randint(MIN_NUM, MAX_NUM)
     num2 = randint(MIN_NUM, MAX_NUM)
     question = (f'{num1} {num2}')
