@@ -14,7 +14,7 @@ def calculate_progression(initial_term, common_difference, num_terms):
     return progression
 
 
-def question_string(progression, missing_index):
+def generate_question_string(progression, missing_index):
     modified_progression = []
     for i, num in enumerate(progression):
         if i != missing_index:
@@ -33,6 +33,6 @@ def get_question_and_correct_answer():
                                                common_difference,
                                                num_terms)
     missing_index = choice(range(len(progression_result)))
-    question, correct_answer = question_string(progression_result,
-                                               missing_index)
+    question, correct_answer = generate_question_string(progression_result,
+                                                        missing_index)
     return question, str(correct_answer)
